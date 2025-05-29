@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sekuwa Spot - Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        .menu-category-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px; /* Space for the underline */
+        }
+        .menu-category-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #eab308; /* Tailwind yellow-500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl w-full bg-white shadow-xl rounded-xl p-8 sm:p-10 lg:p-12 border border-gray-200">
+            <header class="text-center mb-10">
+                <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Sekuwa Spot
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-600 font-medium italic">
+                    Authentic Nepali Flavors
+                </p>
+            </header>
+
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 menu-category-title">Our Menu</h2>
+
+                <div class="mb-10">
+                    <h3 class="text-3xl font-semibold text-gray-700 mb-6 text-center">Food</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Chicken Sekuwa</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Tender chicken marinated in traditional Nepali spices, grilled to perfection.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 450</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Mutton Sekuwa</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Succulent mutton pieces, spiced and grilled over charcoal for a smoky flavor.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 550</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Pork Sekuwa</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Juicy pork sekuwa, a local favorite, marinated with unique Nepali herbs.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 500</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Vegetable Sekuwa</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Assorted fresh vegetables grilled with aromatic spices, a healthy option.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 350</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Aloo Chop</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Spiced potato patties, deep-fried to golden perfection, served with chutney.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 180</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Chatamari</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Newari-style rice flour crepe, a light and savory snack.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 220</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-semibold text-gray-700 mb-6 text-center">Drinks</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Nepali Chiya</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Traditional Nepali milk tea, spiced with ginger and cardamom.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 80</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Fresh Lime Soda</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Refreshing lime soda, perfect for a hot day.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 150</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Lassi (Sweet/Salted)</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Creamy yogurt drink, available sweet or salted.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 200</span>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Bottled Water</h4>
+                            <p class="text-gray-700 leading-relaxed mb-3">Mineral water bottle.</p>
+                            <span class="text-xl font-semibold text-yellow-600">NPR 50</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-center mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-4xl font-bold text-gray-800 mb-8 menu-category-title">Contact Us</h2>
+                <div class="space-y-4 text-lg text-gray-700">
+                    <p>
+                        <strong class="font-semibold text-gray-900">Address:</strong>
+                        123 Main Street, Lalitpur, Bagmati Province, Nepal
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-gray-900">Phone:</strong>
+                        <a href="tel:+977-9876543210" class="text-blue-600 hover:underline">+977-9876543210</a>
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-gray-900">Email:</strong>
+                        <a href="mailto:info@sekuwaspot.com" class="text-blue-600 hover:underline">info@sekuwaspot.com</a>
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-gray-900">Website:</strong>
+                        <a href="http://www.sekuwaspot.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.sekuwaspot.com</a>
+                    </p>
+                </div>
+            </section>
+
+            <footer class="text-center mt-12 pt-8 border-t border-gray-100 text-gray-500 text-sm">
+                <p>&copy; 2025 The Sekuwa Spot. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
