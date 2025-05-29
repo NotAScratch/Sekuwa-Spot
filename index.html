@@ -26,81 +26,700 @@
             height: 2px;
             background-color: #eab308; /* Tailwind yellow-500 */
         }
+        .menu-item-card {
+            background-color: #ffffff; /* White background for cards */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            border: 1px solid #e5e7eb; /* border border-gray-200 */
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item-card:hover {
+            transform: translateY(-5px); /* subtle lift on hover */
+        }
+        .price {
+            font-weight: 600; /* font-semibold */
+            color: #d97706; /* yellow-700 */
+        }
+        .sub-category-title {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 600; /* font-semibold */
+            color: #4b5563; /* gray-700 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+            border-bottom: 1px dashed #d1d5db; /* Light gray dashed line */
+            padding-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body class="antialiased">
     <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl w-full bg-white shadow-xl rounded-xl p-8 sm:p-10 lg:p-12 border border-gray-200">
+        <div class="max-w-5xl w-full bg-white shadow-2xl rounded-xl p-8 sm:p-10 lg:p-12 border border-gray-100">
             <header class="text-center mb-10">
                 <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                    The Sekuwa Spot
+                    THE SEKUWA SPOT
                 </h1>
                 <p class="text-xl sm:text-2xl text-gray-600 font-medium italic">
-                    Authentic Nepali Flavors
+                    Restaurant & Bar
                 </p>
             </header>
 
             <section class="mb-12">
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 menu-category-title">Our Menu</h2>
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-10 menu-category-title">Food Menu</h2>
 
-                <div class="mb-10">
-                    <h3 class="text-3xl font-semibold text-gray-700 mb-6 text-center">Food</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Chicken Sekuwa</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Tender chicken marinated in traditional Nepali spices, grilled to perfection.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 450</span>
+                <div class="mb-8">
+                    <h3 class="sub-category-title">MO:MO</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Veg momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Classic steamed dumplings with vegetable filling.</p>
+                            <span class="price">NPR 150</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Mutton Sekuwa</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Succulent mutton pieces, spiced and grilled over charcoal for a smoky flavor.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 550</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Fried Veg momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Crispy fried dumplings with vegetable filling.</p>
+                            <span class="price">NPR 180</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Pork Sekuwa</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Juicy pork sekuwa, a local favorite, marinated with unique Nepali herbs.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 500</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Steamed dumplings filled with seasoned minced chicken.</p>
+                            <span class="price">NPR 200</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Vegetable Sekuwa</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Assorted fresh vegetables grilled with aromatic spices, a healthy option.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 350</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken 'C' momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Spicy and tangy chicken momo, a popular variation.</p>
+                            <span class="price">NPR 250</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Aloo Chop</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Spiced potato patties, deep-fried to golden perfection, served with chutney.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 180</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Jhol momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Chicken momo served in a flavorful, hot soup.</p>
+                            <span class="price">NPR 250</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Chatamari</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Newari-style rice flour crepe, a light and savory snack.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 220</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Fried Chicken momo</h4>
+                            <p class="text-gray-600 text-sm mb-2">Golden fried chicken momo for a crispy bite.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken momo Sadeko</h4>
+                            <p class="text-gray-600 text-sm mb-2">Chicken momo mixed with fresh spices and vegetables.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken momo Kothey</h4>
+                            <p class="text-gray-600 text-sm mb-2">Pan-fried momo, crispy on one side and soft on the other.</p>
+                            <span class="price">NPR 250</span>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <h3 class="text-3xl font-semibold text-gray-700 mb-6 text-center">Drinks</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Nepali Chiya</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Traditional Nepali milk tea, spiced with ginger and cardamom.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 80</span>
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Chowmein</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Veg Chowmein</h4>
+                            <p class="text-gray-600 text-sm mb-2">Stir-fried noodles with fresh vegetables.</p>
+                            <span class="price">NPR 150</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Fresh Lime Soda</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Refreshing lime soda, perfect for a hot day.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 150</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Egg Chowmein</h4>
+                            <p class="text-gray-600 text-sm mb-2">Stir-fried noodles with egg and vegetables.</p>
+                            <span class="price">NPR 180</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Lassi (Sweet/Salted)</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Creamy yogurt drink, available sweet or salted.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 200</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Chowmein</h4>
+                            <p class="text-gray-600 text-sm mb-2">Stir-fried noodles with chicken and vegetables.</p>
+                            <span class="price">NPR 200</span>
                         </div>
-                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100 transform hover:scale-105 transition duration-300">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Bottled Water</h4>
-                            <p class="text-gray-700 leading-relaxed mb-3">Mineral water bottle.</p>
-                            <span class="text-xl font-semibold text-yellow-600">NPR 50</span>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork Chowmein</h4>
+                            <p class="text-gray-600 text-sm mb-2">Stir-fried noodles with tender pork slices.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mix Chowmein</h4>
+                            <p class="text-gray-600 text-sm mb-2">A mix of chicken, egg, and vegetables with noodles.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Fried Rice</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Veg Fried Rice</h4>
+                            <p class="text-gray-600 text-sm mb-2">Flavorful fried rice with assorted vegetables.</p>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Egg Fried Rice</h4>
+                            <p class="text-gray-600 text-sm mb-2">Fried rice with scrambled egg and vegetables.</p>
+                            <span class="price">NPR 200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Fried Rice</h4>
+                            <p class="text-gray-600 text-sm mb-2">Classic fried rice with tender chicken pieces.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork Fried Rice</h4>
+                            <p class="text-gray-600 text-sm mb-2">Delicious fried rice with savory pork.</p>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mix Fried Rice</h4>
+                            <p class="text-gray-600 text-sm mb-2">A hearty mix of chicken, egg, and pork in fried rice.</p>
+                            <span class="price">NPR 300</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Thukpa</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Veg Thukpa</h4>
+                            <p class="text-gray-600 text-sm mb-2">Noodle soup with fresh vegetables.</p>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Egg Thukpa</h4>
+                            <p class="text-gray-600 text-sm mb-2">Noodle soup with egg and vegetables.</p>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Thukpa</h4>
+                            <p class="text-gray-600 text-sm mb-2">Hearty noodle soup with chicken and vegetables.</p>
+                            <span class="price">NPR 200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mix Thukpa</h4>
+                            <p class="text-gray-600 text-sm mb-2">Noodle soup with a mix of meats and vegetables.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork Thukpa</h4>
+                            <p class="text-gray-600 text-sm mb-2">Noodle soup with tender pork slices.</p>
+                            <span class="price">NPR 250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Biryani</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mutton Biryani</h4>
+                            <p class="text-gray-600 text-sm mb-2">Fragrant basmati rice cooked with succulent mutton and spices.</p>
+                            <span class="price">NPR 750</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Biryani</h4>
+                            <p class="text-gray-600 text-sm mb-2">Aromatic rice dish with tender chicken pieces and rich flavors.</p>
+                            <span class="price">NPR 550</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Veg Biryani</h4>
+                            <p class="text-gray-600 text-sm mb-2">Vegetable biryani, a flavorful and aromatic rice dish.</p>
+                            <span class="price">NPR 350</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Salad</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Green Salad</h4>
+                            <p class="text-gray-600 text-sm mb-2">Fresh mixed greens with a light dressing.</p>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Fruit Salad</h4>
+                            <p class="text-gray-600 text-sm mb-2">Assorted seasonal fruits, refreshing and healthy.</p>
+                            <span class="price">NPR 350</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">BBQ</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mutton BBQ</h4>
+                            <p class="text-gray-600 text-sm mb-2">Grilled mutton marinated in special BBQ sauce.</p>
+                            <span class="price">NPR 2200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork BBQ</h4>
+                            <p class="text-gray-600 text-sm mb-2">Tender pork grilled to perfection with smoky flavor.</p>
+                            <span class="price">NPR 1200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken BBQ</h4>
+                            <p class="text-gray-600 text-sm mb-2">Juicy chicken grilled with aromatic spices.</p>
+                            <span class="price">NPR 1000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Non Veg Platter</h3>
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Non Veg Platter</h4>
+                        <p class="text-gray-600 text-sm mb-2">Assortment of Momo, Fish Finger, Peanuts Sadeko, Mustang Aalu, Hot Wings.</p>
+                        <span class="price">NPR 550</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">VEG STARTERS</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">French Fries</h4>
+                            <span class="price">NPR 200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chips Chilly</h4>
+                            <span class="price">NPR 220</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mustang Aalu</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mushroom Sadeko</h4>
+                            <span class="price">NPR 185</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Peanuts Sadeko</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Paneer Pakoda</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Paneer Chilly</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Cheese Balls</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Crispy Fried Mushroom</h4>
+                            <span class="price">NPR 200</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Wai Wai Chatpate</h4>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Masala Papad</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Bhatmas Sadeko</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">NON VEG STARTERS</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Fish Finger</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Chilly</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Sadeko</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pangra Fry</h4>
+                            <span class="price">NPR 280</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Timmur</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Spicy Hot Wings</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Roast</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Sausage</h4>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork Tawa</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Pork Chilly</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Sukuti Chatpate</h4>
+                            <span class="price">NPR 250</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Buff Sukuti Sadeko</h4>
+                            <span class="price">NPR 380</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mutton tass set</h4>
+                            <span class="price">NPR 650</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Sizzler</h4>
+                            <span class="price">NPR 600</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Grilled whole fish</h4>
+                            <span class="price">NPR 650</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chicken Lollipop</h4>
+                            <span class="price">NPR 350</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-10 menu-category-title">Pizza Menu</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">CHEESE PIZZA</h4>
+                        <p class="text-gray-600 text-sm mb-2">Cream sauce, mozzarella cheese and parmesan cheese.</p>
+                        <span class="price">NPR 550</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">PEPPERONI PIZZA</h4>
+                        <p class="text-gray-600 text-sm mb-2">Tomato sauce, mozzarella cheese, and slices of pepperoni.</p>
+                        <span class="price">NPR 800</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">VEG PIZZA</h4>
+                        <p class="text-gray-600 text-sm mb-2">Tomato sauce, mozzarella cheese, sweet corn, bell pepper, onion and pineapple.</p>
+                        <span class="price">NPR 600</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">CHICKEN PIZZA</h4>
+                        <p class="text-gray-600 text-sm mb-2">Tomato sauce, mozzarella cheese, grilled chicken, red onions and black olives.</p>
+                        <span class="price">NPR 650</span>
+                    </div>
+                    <div class="menu-item-card">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">MEAT LOVER PIZZA</h4>
+                        <p class="text-gray-600 text-sm mb-2">Tomato sauce, mozzarella cheese, pepperoni, sausage, bell peppers, onions, and black olives.</p>
+                        <span class="price">NPR 650</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-10 menu-category-title">Drinks Menu</h2>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Coffee</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Expresso</h4>
+                            <span class="price">NPR 80</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Doppio</h4>
+                            <span class="price">NPR 100</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Americano</h4>
+                            <span class="price">NPR 120</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Latte</h4>
+                            <span class="price">NPR 140</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Moccha</h4>
+                            <span class="price">NPR 170</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Cappuccino</h4>
+                            <span class="price">NPR 130</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Wine</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jacobs Creek Moscato</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 2250</span> / Glass: <span class="price">NPR 600</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jacobs Creek Merlot</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 2250</span> / Glass: <span class="price">NPR 600</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Robertson Red/White</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 2050</span> / Glass: <span class="price">NPR 550</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">J.P Chenet White/Red</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 2250</span> / Glass: <span class="price">NPR 600</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Big Master</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 1200</span> / Glass: <span class="price">NPR 350</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Domestic Alcohol</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Old Durbar Black</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 4600</span> / Half: <span class="price">NPR 2400</span> / Quarter: <span class="price">NPR 1450</span> / 60ml: <span class="price">NPR 500</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Old Durbar Red</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 3600</span> / Half: <span class="price">NPR 2050</span> / Quarter: <span class="price">NPR 1150</span> / 60ml: <span class="price">NPR 400</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Signature Red</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 3500</span> / Half: <span class="price">NPR 1900</span> / Quarter: <span class="price">NPR 1100</span> / 60ml: <span class="price">NPR 375</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Signature Green</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 3300</span> / Half: <span class="price">NPR 1800</span> / Quarter: <span class="price">NPR 1000</span> / 60ml: <span class="price">NPR 350</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">8848</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 2950</span> / Half: <span class="price">NPR 1600</span> / Quarter: <span class="price">NPR 950</span> / 60ml: <span class="price">NPR 350</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Gurkhas & Guns</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 4100</span> / Half: <span class="price">NPR 2250</span> / Quarter: <span class="price">NPR 1250</span> / 60ml: <span class="price">NPR 450</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Khukuri Rum</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 2850</span> / Half: <span class="price">NPR 1450</span> / Quarter: <span class="price">NPR 900</span> / 60ml: <span class="price">NPR 325</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Ruslan Vodka</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 2950</span> / Half: <span class="price">NPR 1600</span> / Quarter: <span class="price">NPR 950</span> / 60ml: <span class="price">NPR 350</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Nude vodka</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full: <span class="price">NPR 2950</span> / Half: <span class="price">NPR 1600</span> / Quarter: <span class="price">NPR 950</span> / 60ml: <span class="price">NPR 350</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Imported Alcohol</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">J.W Double Black (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 11500</span> / 60ml: <span class="price">NPR 750</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">J.W Black Label (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 10350</span> / 60ml: <span class="price">NPR 650</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chivas 18 yrs (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 19500</span> / 60ml: <span class="price">NPR 1250</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Chivas 12 yrs (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 10350</span> / 60ml: <span class="price">NPR 650</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jack Daniels (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 9000</span> / 60ml: <span class="price">NPR 600</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">J.W Blonde (700 ml)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 6500</span> / 60ml: <span class="price">NPR 585</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">J.W Red Label (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 8200</span> / 60ml: <span class="price">NPR 550</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Singleton (700 ml)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 10200</span> / 60ml: <span class="price">NPR 950</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">The Glenlivet 12 yrs (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 13500</span> / 60ml: <span class="price">NPR 850</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Vat 69 (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 8000</span> / 60ml: <span class="price">NPR 550</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Absolut (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 7000</span> / 60ml: <span class="price">NPR 500</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jameson (1 Lt)</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 8200</span> / 60ml: <span class="price">NPR 570</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Shooters</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Agave Tequila Gold/Silver</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 6500</span> / Shot: <span class="price">NPR 500</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Baileys Irish Cream</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 9000</span> / Shot: <span class="price">NPR 500</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jagermeister</h4>
+                            <p class="text-gray-600 text-sm mb-2">Bottle: <span class="price">NPR 9000</span> / Shot: <span class="price">NPR 500</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Jager Bomb</h4>
+                            <span class="price">NPR 600</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Beverage</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Mineral Water</h4>
+                            <span class="price">NPR 50</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Coke/Fanta/Sprite</h4>
+                            <span class="price">NPR 100</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Coke/Fanta/Sprite Jumbo</h4>
+                            <span class="price">NPR 500</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Real Juice per Glass</h4>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Soda</h4>
+                            <span class="price">NPR 100</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Lemon Soda</h4>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Hot lemon</h4>
+                            <span class="price">NPR 80</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Hot lemon with Honey</h4>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Apple Cider</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Xtreame</h4>
+                            <span class="price">NPR 220</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Fresh Juice Seasonal</h4>
+                            <span class="price">NPR 300</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Plain Lassi</h4>
+                            <span class="price">NPR 150</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Banana lassi</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Sweet lassi</h4>
+                            <span class="price">NPR 180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Beer</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Barasinghe</h4>
+                            <span class="price">NPR 580</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Tuborg</h4>
+                            <span class="price">NPR 580</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Carlsberg</h4>
+                            <span class="price">NPR 650</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Gorkha Strong</h4>
+                            <span class="price">NPR 480</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-10 menu-category-title">Other Offerings</h2>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Hookah</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Regular Hookah</h4>
+                            <p class="text-gray-600 text-sm mb-2">Flavors: Mint, Double Apple, Mix</p>
+                            <span class="price">NPR 500</span>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Premium Hookah</h4>
+                            <p class="text-gray-600 text-sm mb-2">Flavors: Lady Killer, Love 66, Mango Tango, Chief Commissioner</p>
+                            <span class="price">NPR 650</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="sub-category-title">Cigarette</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Surya Red/light</h4>
+                            <p class="text-gray-600 text-sm mb-2">Pack: <span class="price">NPR 450</span> / PC: <span class="price">NPR 30</span></p>
+                        </div>
+                        <div class="menu-item-card">
+                            <h4 class="text-xl font-bold text-gray-900 mb-1">Shikar Red/light</h4>
+                            <p class="text-gray-600 text-sm mb-2">Pack: <span class="price">NPR 350</span> / PC: <span class="price">NPR 25</span></p>
                         </div>
                     </div>
                 </div>
@@ -111,19 +730,14 @@
                 <div class="space-y-4 text-lg text-gray-700">
                     <p>
                         <strong class="font-semibold text-gray-900">Address:</strong>
-                        123 Main Street, Lalitpur, Bagmati Province, Nepal
+                        Lalitpur, Bagmati Province, Nepal
                     </p>
                     <p>
                         <strong class="font-semibold text-gray-900">Phone:</strong>
-                        <a href="tel:+977-9876543210" class="text-blue-600 hover:underline">+977-9876543210</a>
+                        <a href="tel:+977-9823940601" class="text-blue-600 hover:underline">+977-9823940601</a>
                     </p>
-                    <p>
-                        <strong class="font-semibold text-gray-900">Email:</strong>
-                        <a href="mailto:info@sekuwaspot.com" class="text-blue-600 hover:underline">info@sekuwaspot.com</a>
-                    </p>
-                    <p>
-                        <strong class="font-semibold text-gray-900">Website:</strong>
-                        <a href="http://www.sekuwaspot.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.sekuwaspot.com</a>
+                    <p class="text-sm text-gray-500 italic">
+                        (Prices are Inclusive of all Applicable Charges & Tax)
                     </p>
                 </div>
             </section>
